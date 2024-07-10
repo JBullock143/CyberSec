@@ -1,0 +1,29 @@
+Web Exploitations
+
+* Web Decode Challenge *
+
+ - right click on web page and select "inspect"
+ - on web page, click the "about" tab
+ - find the string on the inspect page 'cGljb0NURnt3ZWJfc3VjYzNzc2Z1bGx5X2QzYzBkZWRfMjgzZTYyZmV9'
+ - copy the string and input into CyberChef to read the FLAG
+
+* Unminify *
+
+- right click on wep page and select 'view page source'
+- scroll to the right until you find the FLAG 'picoCTF{pr3tty_c0d3_51d374f0}'
+
+* IntrotoBurp *
+
+-copy webpage URL
+-PASTE URL in Burp Suite open browser
+-go back to Burp and click 'Forward' 
+-once you see the 'Registration' page, input anything into each section of the page then click 'Register'
+-go to Burp and click 'Forward', then go back to the Burp open browser in order to get to next webpage (may have to execute multiple times)
+-the next webpage should be the '2fa Authorization' page
+-input anything you want into the OTP 
+-go back to Burp and click 'Forward'
+-delete the otp input on line '16' (DO NOT DELETE THE LINE)
+-click 'Forward'
+-the Burp open browser should have your FLAG!
+
+* 
